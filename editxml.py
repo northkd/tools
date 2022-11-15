@@ -1,5 +1,7 @@
 '''voc数据集xml文件没有path路径时，可用以下代码修改'''
 
+'''本代码先判断是否存在path，如不存在则添加path，并指定添加path中内容'''
+
 import xml.dom.minidom as ET
 import os
 from xml.etree.ElementTree import parse, Element
